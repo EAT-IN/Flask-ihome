@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-
-
 from flask_script import Manager  # 负责脚本控制使用manager来运行整个程序
 from flask_migrate import MigrateCommand, Migrate  # 对app以及db数据库的迁移
 
