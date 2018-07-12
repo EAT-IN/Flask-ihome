@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from . import api
-from ihome import db
+from ihome import db, models
 import logging
 from flask import current_app
 
