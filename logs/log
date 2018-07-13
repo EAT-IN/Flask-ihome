@@ -148,3 +148,32 @@ INFO _internal.py:87 127.0.0.1 - - [12/Jul/2018 22:46:57] "GET /api/v1_0/image_c
 INFO _internal.py:87 127.0.0.1 - - [12/Jul/2018 22:46:57] "GET /favicon.ico HTTP/1.1" 500 -
 INFO _internal.py:87 127.0.0.1 - - [12/Jul/2018 22:47:07] "GET /api/v1_0/image_code/3 HTTP/1.1" 404 -
 INFO _internal.py:87 127.0.0.1 - - [12/Jul/2018 22:47:07] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:87  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:87  * Restarting with stat
+WARNING _internal.py:87  * Debugger is active!
+INFO _internal.py:87  * Debugger PIN: 189-533-403
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:24] "GET /register HTTP/1.1" 404 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:25] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /register.html HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /static/css/ihome/main.css HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /static/css/ihome/register.css HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /static/images/logo@128x59.png HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /static/js/ihome/register.js?v=3 HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /api/v1_0/image_codes/d8db4240-48e8-4326-9efa-955dd7e3aaca HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:41:28] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:42:05] "GET /api/v1_0/image_codes/354a57e7-ecd6-4304-a6b2-85a91024d30c HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:42:25] "GET /api/v1_0/image_codes/0f44c85d-3ed9-4802-808b-c5ef7f027175 HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:46:40] "GET /api/v1_0/image_codes/753a1a1a-5d43-4923-a7fd-9d54a90c9fb2 HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:46:42] "GET /api/v1_0/image_codes/9701b4c1-93b3-44b2-9693-49e488035860 HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:47:03] "GET /api/v1_0/image_codes/316d6e26-fe8e-4b4d-9cfe-df179a4ca3f8 HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:47:48] "GET /api/v1_0/sms_codes/13879541108?image_code_id=316d6e26-fe8e-4b4d-9cfe-df179a4ca3f8&image_code=EJQQ HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:48:20] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:48:31] "GET /api/smscode?mobile=15679565620&code=EJQQ&codeId=316d6e26-fe8e-4b4d-9cfe-df179a4ca3f8 HTTP/1.1" 404 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:48:53] "GET /api/v1_0/image_codes/4f922c70-ef15-4ecc-87fe-5c9bfb5056fa HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:49:41] "GET /api/v1_0/image_codes/fbea6faa-dbd0-4ec4-9901-89704933d7a3 HTTP/1.1" 200 -
