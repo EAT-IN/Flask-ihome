@@ -177,3 +177,25 @@ INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:48:20] "GET /static/plugins/b
 INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:48:31] "GET /api/smscode?mobile=15679565620&code=EJQQ&codeId=316d6e26-fe8e-4b4d-9cfe-df179a4ca3f8 HTTP/1.1" 404 -
 INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:48:53] "GET /api/v1_0/image_codes/4f922c70-ef15-4ecc-87fe-5c9bfb5056fa HTTP/1.1" 200 -
 INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:49:41] "GET /api/v1_0/image_codes/fbea6faa-dbd0-4ec4-9901-89704933d7a3 HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:53:26] "GET /api/v1_0/image_codes/11fb54ae-d75b-4ad3-add7-7481fa2497c2 HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:53:26] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:53:50] "GET /api/v1_0/image_codes/109493fb-98bc-49d9-b9f6-34facb1263c3 HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET / HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /static/plugins/swiper/css/swiper.min.css HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /static/css/ihome/index.css HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /static/js/template.js HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /static/js/ihome/index.js HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /static/images/home01.jpg HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /static/images/home02.jpg HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /static/images/home03.jpg HTTP/1.1" 304 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:46] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:52] "GET /api/v1_0/image_codes/7359e101-ce43-4467-8d7d-611734b6c978 HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:52] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:54:57] "GET /api/v1_0/image_codes/b70b1911-add6-4c57-8292-2ebc1fa37f1f HTTP/1.1" 200 -
+INFO _internal.py:87 127.0.0.1 - - [13/Jul/2018 20:55:06] "GET /api/smscode?mobile=1387954110&code=rdxe&codeId=b70b1911-add6-4c57-8292-2ebc1fa37f1f HTTP/1.1" 404 -
+INFO _internal.py:87  * Detected change in '/home/python/Desktop/ihome/ihome/utils/commons.py', reloading
+INFO _internal.py:87  * Restarting with stat

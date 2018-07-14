@@ -2,6 +2,7 @@
 
 from datetime import datetime
 from . import db
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 class BaseModel(object):
@@ -14,7 +15,7 @@ class BaseModel(object):
 class User(BaseModel, db.Model):
     """用户"""
 
-    __tablename__ = "ih_user_profile"  # 在数据库中表的名字
+    __tablename__ = "ih_user_profile"
 
     id = db.Column(db.Integer, primary_key=True)  # 用户编号
     name = db.Column(db.String(32), unique=True, nullable=False)  # 用户暱称
@@ -26,11 +27,26 @@ class User(BaseModel, db.Model):
     houses = db.relationship("House", backref="user")  # 用户发布的房屋
     orders = db.relationship("Order", backref="user")  # 用户下的订单
 
+    @property
+    def password(self):
+        """对应password属性的读取操作"""
+        raise AttributeError("不支持读取操作")
+
+    @password.setter
+    def password(self, value):
+        """对应password属性的设置操作, value用户设置的密码值"""
+        self.password_hash = generate_password_hash(value)
+
+    def check_password(self, value):
+        """检查用户密码， value 是用户填写密码"""
+        return check_password_hash(self.password_hash, value)
+
+
 
 class Area(BaseModel, db.Model):
     """城区"""
 
-    __tablename__ = "ih_area_info"  # 在数据库中表的名字
+    __tablename__ = "ih_area_info"
 
     id = db.Column(db.Integer, primary_key=True)  # 区域编号
     name = db.Column(db.String(32), nullable=False)  # 区域名字
@@ -48,7 +64,7 @@ house_facility = db.Table(
 class House(BaseModel, db.Model):
     """房屋信息"""
 
-    __tablename__ = "ih_house_info"  # 在数据库中表的名字
+    __tablename__ = "ih_house_info"
 
     id = db.Column(db.Integer, primary_key=True)  # 房屋编号
     user_id = db.Column(db.Integer, db.ForeignKey("ih_user_profile.id"), nullable=False)  # 房屋主人的用户编号
@@ -74,7 +90,7 @@ class House(BaseModel, db.Model):
 class Facility(BaseModel, db.Model):
     """设施信息"""
 
-    __tablename__ = "ih_facility_info"  # 在数据库中表的名字
+    __tablename__ = "ih_facility_info"
 
     id = db.Column(db.Integer, primary_key=True)  # 设施编号
     name = db.Column(db.String(32), nullable=False)  # 设施名字
@@ -83,7 +99,7 @@ class Facility(BaseModel, db.Model):
 class HouseImage(BaseModel, db.Model):
     """房屋图片"""
 
-    __tablename__ = "ih_house_image"  # 在数据库中表的名字
+    __tablename__ = "ih_house_image"
 
     id = db.Column(db.Integer, primary_key=True)
     house_id = db.Column(db.Integer, db.ForeignKey("ih_house_info.id"), nullable=False)  # 房屋编号
@@ -93,7 +109,7 @@ class HouseImage(BaseModel, db.Model):
 class Order(BaseModel, db.Model):
     """订单"""
 
-    __tablename__ = "ih_order_info"  # 在数据库中表的名字
+    __tablename__ = "ih_order_info"
 
     id = db.Column(db.Integer, primary_key=True)  # 订单编号
     user_id = db.Column(db.Integer, db.ForeignKey("ih_user_profile.id"), nullable=False)  # 下订单的用户编号
