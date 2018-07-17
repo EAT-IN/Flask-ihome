@@ -21,7 +21,7 @@ def storage(file_data):
     # ret, info = put_file(token, key, localfile)
     ret, info = put_data(token, None, file_data)
 
-    if info.status_code == "200":
+    if info.status_code == 200:
         # 表示上传成功， 返回文件名
         return ret.get("key")
     else:
